@@ -1,0 +1,139 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Space Rice',
+  color: white;
+  background-color: #121212; /* Darker background for better contrast */
+  text-align: center;
+}
+
+/* Header Section */
+header {
+  font-family: 'Wavemax';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: black;
+  width: 100%;
+}
+
+/* Center Navigation */
+.center-nav {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.center-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.center-nav a:hover {
+  color: #ff9800;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* Rewards Section */
+#rewards {
+  padding: 4rem 2rem;
+  background-color: #1c1c1c; /* Dark background for the section */
+  text-align: center;
+}
+
+#rewards h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Wavemax', sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(83deg, #ffbf00, #e600ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#rewards p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin-bottom: 2rem;
+}
+
+/* Reward Grid */
+.reward-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* Individual Reward Item */
+.reward-item {
+  background-color: #2c2c2c; /* Darker background for each item */
+  color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reward-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
+}
+
+.reward-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.reward-item p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff9800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .reward-item {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #rewards h1 {
+    font-size: 2.5rem;
+  }
+
+  .reward-item p {
+    font-size: 1rem;
+  }
+}

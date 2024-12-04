@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Space Rice', sans-serif;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: black;
+    position: relative;
+}
+
+/* Left Emoticon */
+.left-emoticon {
+    font-size: 2rem;
+    color: white;
+}
+
+/* Center Navigation */
+.center-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 7rem;
+}
+
+.center-nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Wavemax', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.center-nav a:hover {
+    color: #ff9800;
+}
+
+/* Social Icons (Top Right) */
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack content vertically */
+    height: 50vh; /* Adjust height based on your design */
+    position: relative; /* Ensures that the pseudo-element is positioned relative to this container */
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Darkened Background Image */
+.hero::before {
+    content: ''; /* Creates an empty element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://images6.alphacoders.com/121/1213573.png) no-repeat center center/cover;
+    opacity: 0.5; /* Reduce opacity to 50% */
+    z-index: -1; /* Makes sure the overlay stays behind the content */
+}
+
+/* Hero Logo */
+.hero-logo {
+    width: 500px; /* Adjust size of the logo */
+    height: auto;
+    border: none;
+    animation: slideInLeftToRight 3s ease-in-out forwards;
+    margin-bottom: -5rem; /* Adds spacing between logo and date/location */
+    margin-top: 6rem; /* Add this line to push the logo further down */
+}
+
+/* Date and Location */
+.date-location {
+    font-size: 1.5rem; /* Adjust the size of the text */
+    color: white; /* Make text white */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    padding: 0.5rem 1rem; /* Add padding to make it look better */
+    border-radius: 5px; /* Optional: rounded corners */
+    margin-top: 1rem; /* Spacing between logo and date/location */
+    transition: all 0.3s ease; /* Smooth transition for changes */
+}
+
+/* Hover effect for Date and Location */
+.date-location:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+/* Animation for gradual visibility from left to right */
+@keyframes slideInLeftToRight {
+    0% {
+        clip-path: inset(0 100% 0 0); /* Start with logo hidden (right side) */
+    }
+    100% {
+        clip-path: inset(0 0 0 0); /* Fully visible */
+    }
+}
+
+
