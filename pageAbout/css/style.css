@@ -1,68 +1,66 @@
-/* Basic Styling */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    font-family: 'Space Rice',
-    color: white;
-    background-color: black;
-    text-align: center;
+	font-family: 'Space Rice', sans-serif;
+	color: white;
+	background-color: black;
+	text-align: center;
 }
 
-/* Header Styles */
 .header {
-    font-family: 'Space Rice',
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: black;
-    position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+	background-color: black;
+	position: relative;
 }
 
-/* Top Left Emoticon */
 .left-emoticon {
-    font-size: 2rem;
-    color: white;
+	font-size: 2rem;
+	color: white;
 }
 
-/* Centered Nav */
 .center-nav {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 2rem;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 5rem;
 }
 
 .center-nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: color 0.3s ease;
+	text-decoration: none;
+	color: white;
+	font-family: 'Wavemax', sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+	transition: color 0.3s ease;
 }
 
 .center-nav a:hover {
-    color: #ff9800;
+	color: #ff9800;
 }
 
-/* Social Icons */
 .social-icons {
     display: flex;
     gap: 1rem;
 }
 
-.social-icons a {
-    color: white;
-    font-size: 1.8rem;
-    text-decoration: none;
+.social-icons a img {
+    width: 30px; 
+    height: 30px; 
     transition: transform 0.3s ease;
 }
 
-.social-icons a:hover {
-    transform: scale(1.2);
+.social-icons a:hover img {
+    transform: scale(1.2); 
 }
 
-/* Hero Section */
 .hero {
     position: relative;
     background-color: #333;
@@ -88,7 +86,6 @@ body {
     margin-top: 1rem;
 }
 
-/* Featured Sections */
 .featured-sections {
     display: flex;
     justify-content: space-around;
@@ -134,13 +131,11 @@ body {
     color: #e65100;
 }
 
-/* Hover Effects */
 .featured-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Footer Section */
 .footer {
     background-color: #222;
     color: white;
@@ -163,7 +158,6 @@ body {
     color: #ff9800;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .featured-item {
         width: 48%;
@@ -175,4 +169,3 @@ body {
         width: 100%;
     }
 }
-
