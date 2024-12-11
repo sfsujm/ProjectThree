@@ -72,16 +72,19 @@ body {
     padding: 1rem;
 }
 
-.hero::before {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/img/anvBackground.png') no-repeat center center / cover;
-    opacity: 0.5; 
-    z-index: -1; 
-}
+.hero-overlay {
+    background-image: url('https://images6.alphacoders.com/121/1213573.png'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    position: relative; 
+  }
 
 .hero-logo {
     width: 500px; 
