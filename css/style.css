@@ -73,12 +73,12 @@ body {
 }
 
 .hero::before {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(https://images6.alphacoders.com/121/1213573.png) no-repeat center center/cover;
+    background-image: url('/img/anvBackground.png') no-repeat center center / cover;
     opacity: 0.5; 
     z-index: -1; 
 }
@@ -95,7 +95,6 @@ body {
 .date-location {
     font-size: 1.5rem; 
     color: white; 
-    background-color: rgba(0, 0, 0, 0.5); 
     padding: 0.5rem 1rem; 
     border-radius: 5px; 
     margin-top: 1rem; 
@@ -114,4 +113,70 @@ body {
     100% {
         clip-path: inset(0 0 0 0); 
     }
+}
+
+/* Container for the two columns */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left Column */
+.left-column {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.left-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.left-column h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.left-column p {
+    font-size: 1.2rem;
+}
+
+/* Right Column */
+.right-column {
+    flex: 1;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #333;
+}
+
+.right-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.right-column .map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+}
+
+.right-column p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+h2 {
+	font-family: 'Wavemax', sans-serif;
+	text-transform: uppercase;
+	background: linear-gradient(83deg, #ffbf00, #e600ff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
 }
