@@ -25,5 +25,14 @@ Font's used:
 Wavemax by TypeFactory
  https://typefactory.co/product/wavemax-space-futuristic-font/
 
- Space Rice by MJType
- https://www.dafont.com/space-rice.font
+Quicksand by Andrew Paglinawan
+ https://www.dafont.com/quicksand.font
+
+Mockup source:
+
+Stock photos, royalty-free images, graphics, vectors & videos. Adobe Stock. (n.d.-e). https://stock.adobe.com/ 
+
+SAG-AFTRAA site and pictures:
+
+Home: SAG-AFTRA. SAG. (2024, December 12). https://www.sagaftra.org/ 
+
